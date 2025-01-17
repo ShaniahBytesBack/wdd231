@@ -1,0 +1,245 @@
+/* General styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #003b6f;
+  color: white;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* Desktop Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  transition: max-height 0.3s ease-out;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Align to the right */
+  transform: translateY(-520%);
+}
+
+/* Navbar Container */
+.navbar-container {
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Macondo", serif;
+  font-size: 30px;
+}
+
+.profile-img {
+  width: 10%;
+  height: 30vh;
+  margin: 20px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+main {
+  padding: 100px;
+}
+
+.course-work, .zimbabwe, .certificate {
+  margin-bottom: 20px;
+  background: #d1d1d1;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+.course-work h2, .zimbabwe h2, .certificate h2 {
+  color: #fff;
+  font-family: "Macondo", serif;
+  background: #003b6f;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.course-work {
+  width: 60%;
+}
+
+.course-work ul {
+  list-style-type: none;
+  padding: 20px;
+  line-height: 2;
+}
+
+.zimbabwe {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.zimbabwe img {
+  width: 90%;
+  height: 40vh;
+  margin: 10px 10px 0 10px;
+}
+
+.zimbabwe figcaption {
+  font-size: 20px;
+  font-family: "Macondo", serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  height: 65vh;
+}
+
+.certificate .filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.divider {
+  border-top: 1px solid #000;
+  margin: 30px 0;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 15px 20px 20px;
+}
+
+.course {
+  padding: 25px 15px;
+  border-radius: 5px;
+  background-color: #8b4513;
+  color: white;
+  flex: 1 1 25%;
+  text-align: center;
+}
+
+.course.completed {
+  background-color: #006400;
+}
+
+footer {
+  background-color: #003b6f;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .profile {
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 15%;
+    height: 23vh;
+  }
+  
+  .flex-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .zimbabwe {
+    width: 100%;
+  }
+
+  .zimbabwe img {
+    height: 30vh;
+  }
+
+  .course-work {
+    width: 100%;
+  }
+
+  .course-work ul {
+    padding: 10px;
+  }
+
+  .course {
+    flex: 1 1 50%;
+  }
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    position: relative;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 50%;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar.expanded {
+    max-height: 300px; /* Adjust as per content size */
+    padding: 10px 0;
+  }
+}
