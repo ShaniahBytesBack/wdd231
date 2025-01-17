@@ -10,10 +10,30 @@ header {
   background-color: #003b6f;
   color: white;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-/* Desktop Navbar */
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Macondo", serif;
+  font-size: 30px;
+}
+
+.profile-img {
+  width: 10%;
+  height: 30vh;
+  margin: 20px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Navbar */
+.navbar-container {
+  position: relative;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -43,42 +63,24 @@ header {
   color: white;
   position: absolute;
   top: 50%;
-  right: 20px; /* Align to the right */
+  right: 20px;
   transform: translateY(-520%);
 }
 
-/* Navbar Container */
-.navbar-container {
-  position: relative;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Macondo", serif;
-  font-size: 30px;
-}
-
-.profile-img {
-  width: 10%;
-  height: 30vh;
-  margin: 20px;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
-}
-
+/* Main Content */
 main {
   padding: 100px;
 }
 
-.course-work, .zimbabwe, .certificate {
+/* Course Work */
+.course-work {
+  width: 60%;
   margin-bottom: 20px;
   background: #d1d1d1;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
-
 }
 
-.course-work h2, .zimbabwe h2, .certificate h2 {
+.course-work h2 {
   color: #fff;
   font-family: "Macondo", serif;
   background: #003b6f;
@@ -87,20 +89,29 @@ main {
   margin: 0;
 }
 
-.course-work {
-  width: 60%;
-}
-
 .course-work ul {
   list-style-type: none;
   padding: 20px;
   line-height: 2;
 }
 
+/* Zimbabwe Section */
 .zimbabwe {
   display: flex;
   flex-direction: column;
   width: 30%;
+  margin-bottom: 20px;
+  background: #d1d1d1;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.zimbabwe h2 {
+  color: #fff;
+  font-family: "Macondo", serif;
+  background: #003b6f;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
 }
 
 .zimbabwe img {
@@ -116,13 +127,30 @@ main {
   padding: 10px;
 }
 
+/* Flex Container */
 .flex-container {
   display: flex;
   justify-content: space-around;
   height: 65vh;
 }
 
-.certificate .filter-buttons {
+/* Certificate Section */
+.certificate {
+  margin-bottom: 20px;
+  background: #d1d1d1;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.certificate h2 {
+  color: #fff;
+  font-family: "Macondo", serif;
+  background: #003b6f;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.filter-buttons {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -165,6 +193,7 @@ main {
   background-color: #006400;
 }
 
+/* Footer */
 footer {
   background-color: #003b6f;
   color: white;
@@ -174,6 +203,7 @@ footer {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+  /* Profile */
   .profile {
     font-size: 20px;
   }
@@ -182,12 +212,14 @@ footer {
     width: 15%;
     height: 23vh;
   }
-  
+
+  /* Flex Container */
   .flex-container {
     flex-direction: column;
     height: auto;
   }
 
+  /* Zimbabwe */
   .zimbabwe {
     width: 100%;
   }
@@ -196,6 +228,7 @@ footer {
     height: 30vh;
   }
 
+  /* Course Work */
   .course-work {
     width: 100%;
   }
@@ -207,18 +240,15 @@ footer {
   .course {
     flex: 1 1 50%;
   }
-}
 
-/* Mobile Navbar */
-@media screen and (max-width: 768px) {
-  .navbar-container {
-    position: relative;
+  /* Navbar */
+  .hamburger-menu {
+    display: block;
   }
 
   .navbar {
     flex-direction: column;
     justify-content: flex-start;
-    background: #000;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -226,16 +256,13 @@ footer {
     right: 0;
     width: 50%;
     padding: 0;
+    background: #000;
   }
 
   .navbar a {
     padding: 15px 20px;
     width: 100%;
     text-align: center;
-  }
-
-  .hamburger-menu {
-    display: block;
   }
 
   .navbar.expanded {
