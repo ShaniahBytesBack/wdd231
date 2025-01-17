@@ -132,6 +132,7 @@ main {
   display: flex;
   justify-content: space-around;
   height: 65vh;
+  flex-direction: row;
 }
 
 /* Certificate Section */
