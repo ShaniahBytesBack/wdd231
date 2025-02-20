@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Farm and City",
+        "address": "Magamba Rd, Rusape",
+        "phone": "123-456-7890",
+        "website": "https://farmandcity.com",
+        "image": "images/farmandcity.jpeg",
+        "membership": 3
+    },
+    {
+        "name": "Pick n Pay",
+        "address": "45 Market Rd, Rusape",
+        "phone": "098-765-4321",
+        "website": "https://rusapecafe.com",
+        "image": "images/picknpay.jpg",
+        "membership": 2
+    }
+]
