@@ -79,14 +79,22 @@ nav {
   margin: 0.5rem 1.3rem;
 }
 
-.nav-links a {
+.nav-links a,
+.member-card a,
+.member-card a.address-link,
+.member-card a.phone-link,
+.contact-info a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.member-card a:hover,
+.member-card a.address-link:hover,
+.member-card a.phone-link:hover,
+.social i:hover {
   color: #e63946;
 }
 
@@ -161,16 +169,19 @@ nav.open .nav-links {
   flex-direction: row;
   align-items: center;
   gap: 1.2rem;
-  padding: 1rem 1.2rem;
-  color: #222;
-  font-size: 1rem;
-  flex: 1;
+}
+
+#current-weather img,
+.weather-main img,
+#weather-forecast .forecast-row img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
 }
 
 #current-weather img {
   width: 64px;
   height: 64px;
-  margin-top: 0;
 }
 
 .weather-main {
@@ -179,12 +190,6 @@ nav.open .nav-links {
   align-items: center;
   gap: 0.3rem;
   margin-bottom: 0;
-}
-
-.weather-main img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.2rem;
 }
 
 .weather-temp {
@@ -219,12 +224,6 @@ nav.open .nav-links {
   display: inline-block;
 }
 
-#weather-forecast .forecast-row img {
-  width: 50px;
-  height: 50px;
-  margin: 0;
-}
-
 #weather-forecast .forecast-temp {
   font-weight: 500;
   margin-left: 0;
@@ -255,7 +254,8 @@ nav.open .nav-links {
   gap: 1rem;
 }
 
-.business-cards .card {
+.business-cards .card,
+.member-card {
   background-color: #1b1919;
   padding: 1rem;
   border-radius: 8px;
@@ -279,11 +279,6 @@ nav.open .nav-links {
 }
 
 .member-card {
-  background-color: #1b1919;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  text-align: center;
   transition: .2s ease;
   height: 100%;
   display: flex;
@@ -310,27 +305,13 @@ nav.open .nav-links {
 }
 
 .member-card a {
-  color: #fff;
-  text-decoration: none;
   font-weight: bold;
-  transition: .2s ease;
   margin-top: 0.5rem;
-}
-
-.member-card a:hover {
-  color: #e63946;
 }
 
 .member-card a.address-link,
 .member-card a.phone-link {
-  color: #fff;
-  text-decoration: none;
   font-weight: normal;
-}
-
-.member-card a.address-link:hover,
-.member-card a.phone-link:hover {
-  color: #e63946;
 }
 
 /* Members Section */
@@ -377,10 +358,7 @@ footer {
   transition: color 0.3s ease;
 }
 
-.social i:hover {
-  color: #e63946;
-}
-
+/* Responsive */
 @media (max-width: 900px) {
   .logo-nav {
     flex-direction: row;
@@ -430,7 +408,7 @@ footer {
 
   .info-grid > div {
     max-width: 500px;
-    width: 58%;
+    width: 65%;
     min-width: 0;
     margin: 0 auto;
     height: 300px;
