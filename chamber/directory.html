@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of businesses in the Rusape Chamber of Commerce">
-    <meta name="author" content="Shaniah Nyabawa">
-    <title>Rusape Chamber of Commerce Directory</title>
-    
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Rusape Chamber Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://shaniahsrusapechamberdirectory.com/images/logo.png">
-    <meta property="og:url" content="https://ShaniahBytesBack.github.io/wdd231/chamber/directory.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salt Lake City Chamber of Commerce Member Directory" />
+  <meta name="author" content="Shaniah Nyabawa" />
+  <meta property="og:title" content="Salt Lake City Chamber of Commerce" />
+  <meta property="og:description" content="Discover and connect with local businesses in Salt Lake City." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html" />
+  <title>Salt Lake City Chamber | Directory</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- favicon links-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/directory.js"></script>
 
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>Rusape Chamber of Commerce</h1>
-        <h2>Business Directory</h2>
-        <button id="gridView">Grid View</button>
-        <button id="listView">List View</button>
-        <section id="directory" class="grid"></section>
-    </main>    
 
-    <footer>
-        <p>&copy; <span id="year"></span> Rusape Chamber of Commerce</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
-    </footer>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Salt Lake Chamber Logo" class="logo-icon">
+      </div>
+      <nav>
+        <button id="menu" aria-label="Toggle Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="info-grid">
+      <div id="events">
+        <h2>Events</h2>
+      </div>
+      <div id="weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather">
+         
+        </div>
+      </div>
+      <div id="forecast">
+        <h2>Weather Forecast</h2>
+        <div id="weather-forecast">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="business-cards" id="members">
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h2>Salt Lake Chamber of Commerce</h2>
+      <p>
+      <br>10 Rue De La Paix<br>Salt Lake, Mali 999</p>
+      
+      <a href="mailto: info@saltlakecc.org">
+        <i class="ri-mail-fill"></i>
+        info@saltlakecc.org
+      </a>
+      <a href="tel:+1234567890">
+        <i class="ri-phone-fill"></i>
+        +1 (234) 567-89
+      </a>
+    </div>
+    <div class="social">
+      <a href="#"><i class="ri-youtube-line"></i></a>
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-fill"></i></a>
+    </div>
+    <p class="date">
+      WDD231 Class Project 
+      <br> Shaniah Nyabawa
+      <br> &copy; <span id="currentyear"></span> Salt Lake Chamber of Commerce
+      <br>Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
 </body>
+
 </html>

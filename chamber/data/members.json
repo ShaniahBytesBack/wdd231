@@ -1,18 +1,58 @@
-[
+{
+  "members": [
     {
-        "name": "Farm and City",
-        "address": "Magamba Rd, Rusape",
-        "phone": "123-456-7890",
-        "website": "https://farmandcity.com",
-        "image": "images/farmandcity.webp",
-        "membership": 3
+      "name": "Cozy Coffee Lounge",
+      "address": "910 S 300 W, Salt Lake City, UT 84101",
+      "phone": "(385) 355-4867",
+      "website": "https://cozycoffeelounge.getbento.com/",
+      "image": "images/cozycoffeelounge.png",
+      "membership": 3,
+      "description": "A cozy café serving specialty drinks and pastries with a relaxing atmosphere."
     },
     {
-        "name": "Pick n Pay",
-        "address": "45 Market Rd, Rusape",
-        "phone": "098-765-4321",
-        "website": "https://rusapecafe.com",
-        "image": "images/picknpay.webp",
-        "membership": 2
+      "name": "Wasatch IT",
+      "address": "525 S 850 E Suite 4, Lehi, UT 84043",
+      "phone": "(801) 983-4200",
+      "website": "https://wasatchit.com/",
+      "image": "images/wasatchit.png",
+      "membership": 2,
+      "description": "Providing IT support and cloud services to businesses across Utah."
+    },
+    {
+      "name": "Centered City Yoga",
+      "address": "918 E 900 S, Salt Lake City, UT 84105",
+      "phone": "(801) 521-9642",
+      "website": "https://www.centeredcityyoga.com/",
+      "image": "images/yoga.png",
+      "membership": 1,
+      "description": "Yoga studio offering a variety of classes for all levels in a peaceful environment."
+    },
+    {
+      "name": "85°C Bakery Cafe",
+      "address": "153 E 12300 S #200, Draper, UT 84020",
+      "phone": "(801) 601-8228",
+      "website": "https://www.85cbakerycafe.com/",
+      "image": "images/85Cbakery.png",
+      "membership": 3,
+      "description": "A global bakery chain serving fresh breads, cakes, and beverages."
+    },
+    {
+      "name": "Zion Outdoor",
+      "address": "868 Zion Park Blvd, Springdale, UT 84767",
+      "phone": "(435) 772-0472",
+      "website": "https://www.zionoutdoor.com/",
+      "image": "images/zionoutdoorlogo.png",
+      "membership": 2,
+      "description": "Rental and tour company helping visitors explore Zion National Park."
+    },
+    {
+      "name": "Golden Braid Books",
+      "address": "151 S 500 E, Salt Lake City, UT 84102",
+      "phone": "(801) 322-1162",
+      "website": "https://www.goldenbraidslc.com/",
+      "image": "images/gbb.png",
+      "membership": 1,
+      "description": "Independent bookstore focused on spirituality, wellness, and local authors."
     }
-]
+  ]
+}
