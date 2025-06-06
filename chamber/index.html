@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Salt Lake City Chamber of Commerce. Join us to connect, grow, and discover local business opportunities and events.">
+  <meta name="author" content="Shaniah Nyabawa">
+  <meta property="og:title" content="Salt Lake City Chamber of Commerce">
+  <meta property="og:description" content="Discover and connect with local businesses in Salt Lake City.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
+  <title>Salt Lake City Chamber of Commerce | Home</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/index.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Salt Lake Chamber Logo" class="logo-icon">
+      </div>
+      <nav>
+        <button id="menu" aria-label="Toggle Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Salt Lake City Chamber Hero Image">
+      <div class="hero-text">
+        <h2>Welcome to the Salt Lake City Chamber of Commerce</h2>
+        <p>Connecting local businesses and fostering community growth.</p>
+        <a href="#members" class="cta-button">Keynote Tickets</a>
+      </div>
+    </section>
+    <h1>Home</h1>
+    <section class="info-grid">
+      <div id="events">
+        <h2>Events</h2>
+      </div>
+      <div id="weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather">
+         
+        </div>
+      </div>
+      <div id="forecast">
+        <h2>Weather Forecast</h2>
+        <div id="weather-forecast">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="business-cards" id="spotlights">
+      <h2>Member Spotlights</h2>
+      <!-- Spotlight cards will be injected here by JS -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h2>Salt Lake Chamber of Commerce</h2>
+      <p>
+      <br>10 Rue De La Paix<br>Salt Lake, Mali 999</p>
+      
+      <a href="mailto:info@saltlakecc.org">
+        <i class="ri-mail-fill" aria-hidden="true"></i>
+        <span class="visually-hidden">Email: </span>info@saltlakecc.org
+      </a>
+      <a href="tel:+1234567890">
+        <i class="ri-phone-fill"></i>
+        +1 (234) 567-89
+      </a>
+    </div>
+    <div class="social">
+      <a href="#"><i class="ri-youtube-line"></i></a>
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-fill"></i></a>
+    </div>
+    <p class="date">
+      WDD231 Class Project 
+      <br> Shaniah Nyabawa
+      <br> &copy; <span id="currentyear"></span> Salt Lake Chamber of Commerce
+      <br>Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+
+</html>

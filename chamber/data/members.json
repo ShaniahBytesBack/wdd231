@@ -6,7 +6,7 @@
       "phone": "(385) 355-4867",
       "website": "https://cozycoffeelounge.getbento.com/",
       "image": "images/cozycoffeelounge.png",
-      "membership": 3,
+      "membership": "Gold",
       "description": "A cozy café serving specialty drinks and pastries with a relaxing atmosphere."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "(801) 983-4200",
       "website": "https://wasatchit.com/",
       "image": "images/wasatchit.png",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Providing IT support and cloud services to businesses across Utah."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "(801) 521-9642",
       "website": "https://www.centeredcityyoga.com/",
       "image": "images/yoga.png",
-      "membership": 1,
+      "membership": "Bronze",
       "description": "Yoga studio offering a variety of classes for all levels in a peaceful environment."
     },
     {
@@ -33,7 +33,7 @@
       "phone": "(801) 601-8228",
       "website": "https://www.85cbakerycafe.com/",
       "image": "images/85Cbakery.png",
-      "membership": 3,
+      "membership": "Gold",
       "description": "A global bakery chain serving fresh breads, cakes, and beverages."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "(435) 772-0472",
       "website": "https://www.zionoutdoor.com/",
       "image": "images/zionoutdoorlogo.png",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Rental and tour company helping visitors explore Zion National Park."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "(801) 322-1162",
       "website": "https://www.goldenbraidslc.com/",
       "image": "images/gbb.png",
-      "membership": 1,
+      "membership": "Bronze",
       "description": "Independent bookstore focused on spirituality, wellness, and local authors."
     }
   ]
