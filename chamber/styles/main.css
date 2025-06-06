@@ -566,12 +566,11 @@ footer {
     display: none !important;
   }
 
-  /* Desktop Hero Section */
   .hero {
     min-height: 350px;
   }
   .hero img {
-    height: 350px;
+    
     object-fit: cover;
   }
   .hero-text {
