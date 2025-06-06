@@ -34,7 +34,6 @@ header {
   vertical-align: middle;
 }
 
-
 nav {
   position: relative;
 }
@@ -81,7 +80,6 @@ nav.open .nav-links {
   display: block;
 }
 
-/* Hero */
 .hero {
   position: relative;
   text-align: center;
@@ -97,7 +95,6 @@ nav.open .nav-links {
   display: block;
 }
 
-/* Hero text animation */
 @keyframes heroFadeInUp {
   0% {
     opacity: 0;
@@ -348,15 +345,14 @@ main h1{
   font-weight: normal;
 }
 
-#members {
+.business-cards, #members {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: stretch;
   margin: 2rem 0;
-  padding: 0 10rem;
+  padding: 0 2rem;
 }
 
 footer {
@@ -565,12 +561,10 @@ footer {
   #menu {
     display: none !important;
   }
-
   .hero {
     min-height: 350px;
   }
   .hero img {
-    
     object-fit: cover;
   }
   .hero-text {
