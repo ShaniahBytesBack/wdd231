@@ -1,6 +1,3 @@
-/* MAIN.CSS */
-
-/* Base Reset */
 * {
   box-sizing: border-box;
 }
@@ -18,7 +15,7 @@ body {
 header {
   background-color: #1a1a40;
   color: #fff;
-  padding: 1rem;
+  padding: 0;
 }
 
 .logo-nav {
@@ -106,6 +103,10 @@ nav.open .nav-links {
 .hero {
   position: relative;
   text-align: center;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero img {
@@ -114,18 +115,62 @@ nav.open .nav-links {
   display: block;
 }
 
-.hero button {
+/* Hero text animation */
+@keyframes heroFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hero-text {
   position: absolute;
-  bottom: 1rem;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 0.75rem 1.5rem;
-  background-color: #e63946;
+  transform: translate(-50%, -50%);
+  background: rgba(26, 26, 64, 0.75);
   color: #fff;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
+  padding: 2rem 2.5rem;
   border-radius: 5px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  text-align: center;
+  max-width: 90vw;
+  animation: heroFadeInUp 1.2s ease-out;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+  color: #ffb703;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #e63946;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.cta-button:hover {
+  background: #ffb703;
+  color: #1a1a40;
 }
 
 main h1{
@@ -373,7 +418,7 @@ footer {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0,0,0,0);
   white-space: nowrap;
   border: 0;
 }
