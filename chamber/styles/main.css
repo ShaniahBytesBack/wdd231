@@ -51,6 +51,7 @@ nav {
   list-style: none;
   padding: 0 10rem;
   display: none;
+  background: rgba(26, 26, 64, 0.92);
 }
 
 .nav-links li {
@@ -74,6 +75,17 @@ nav {
 .member-card a.phone-link:hover,
 .social i:hover {
   color: #e63946;
+}
+
+.nav-links a.active,
+.navbar a.active {
+  color: #fff !important;
+  background: #c1121f !important;
+  border-radius: 6px;
+  padding: 0.3em 1em;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(193,18,31,0.10);
+  transition: background 0.2s, color 0.2s;
 }
 
 nav.open .nav-links {
@@ -420,7 +432,7 @@ footer {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #1a1a40;
+    background: rgba(26, 26, 64, 0.92);
     position: absolute;
     top: 300%;
     right: -35px;

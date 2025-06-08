@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Salt Lake City Chamber of Commerce. Connect, grow, and discover local business opportunities and events.">
+  <meta name="author" content="Shaniah Nyabawa">
+  <meta property="og:title" content="Salt Lake City Chamber of Commerce">
+  <meta property="og:description" content="Discover and connect with local businesses in Salt Lake City.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/join.html">
+  <title>Join | Salt Lake City Chamber of Commerce</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script defer src="scripts/index.js"></script>
+  <script defer src="scripts/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Salt Lake Chamber Logo" class="logo-icon">
+      </div>
+      <nav>
+        <button id="menu" aria-label="Toggle Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="main-heading">Join Our Chamber Membership</h1>
+    <div class="join-flex">
+      <section class="form-section">
+        <h2>Membership Application Form</h2>
+        <form id="membershipForm" method="get" action="thankyou.html" autocomplete="on">
+          <label for="firstName">First Name
+            <input type="text" id="firstName" name="firstName" required title="Enter your first name" autocomplete="given-name">
+          </label>
+          <label for="lastName">Last Name
+            <input type="text" id="lastName" name="lastName" required title="Enter your last name" autocomplete="family-name">
+          </label>
+          <label for="orgTitle">Organizational Title
+            <input type="text" id="orgTitle" name="orgTitle" title="Enter your organizational title (min 7 letters, hyphens, spaces)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+          </label>
+          <label for="email">Email Address
+            <input type="email" id="email" name="email" required title="Enter your email address" autocomplete="email" placeholder="example@mail.com">
+          </label>
+          <label for="phone">Mobile Phone Number
+            <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
+          </label>
+          <label for="orgName">Business/Organization Name
+            <input type="text" id="orgName" name="orgName" required title="Enter your business or organization name" autocomplete="organization">
+          </label>
+          <fieldset>
+            <legend>Membership Level</legend>
+            <div class="membership-levels">
+              <label>
+                <input type="radio" name="membershipLevel" value="NP" required>
+                Non-Profit
+              </label>
+              <label>
+                <input type="radio" name="membershipLevel" value="Bronze">
+                Bronze
+              </label>
+              <label>
+                <input type="radio" name="membershipLevel" value="Silver">
+                Silver
+              </label>
+              <label>
+                <input type="radio" name="membershipLevel" value="Gold">
+                Gold
+              </label>
+            </div>
+          </fieldset>
+          <label for="description">Business Description
+            <textarea id="description" name="description" title="Describe your business or organization"></textarea>
+          </label>
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button type="submit">Apply for Membership</button>
+        </form>
+      </section>
+      <section class="membership-cards-section">
+        <h2>Membership Levels</h2>
+        <div class="membership-cards" aria-label="Membership Levels">
+          <div class="card" id="card-np" tabindex="0" aria-labelledby="np-title">
+            <h2 id="np-title">Non-Profit</h2>
+            <button type="button" class="benefits-btn" data-modal="modal-np" aria-haspopup="dialog">View Benefits</button>
+          </div>
+          <div class="card" id="card-bronze" tabindex="0" aria-labelledby="bronze-title">
+            <h2 id="bronze-title">Bronze</h2>
+            <button type="button" class="benefits-btn" data-modal="modal-bronze" aria-haspopup="dialog">View Benefits</button>
+          </div>
+          <div class="card" id="card-silver" tabindex="0" aria-labelledby="silver-title">
+            <h2 id="silver-title">Silver</h2>
+            <button type="button" class="benefits-btn" data-modal="modal-silver" aria-haspopup="dialog">View Benefits</button>
+          </div>
+          <div class="card" id="card-gold" tabindex="0" aria-labelledby="gold-title">
+            <h2 id="gold-title">Gold</h2>
+            <button type="button" class="benefits-btn" data-modal="modal-gold" aria-haspopup="dialog">View Benefits</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Modals for membership benefits -->
+    <div class="modal" id="modal-np" role="dialog" aria-modal="true" aria-labelledby="modal-np-title" tabindex="-1" hidden>
+      <div class="modal-content">
+        <h3 id="modal-np-title">Non-Profit Benefits</h3>
+        <ul>
+          <li>Discounted event fees</li>
+          <li>Community support</li>
+          <li>Networking opportunities</li>
+        </ul>
+        <button type="button" class="close-modal" aria-label="Close dialog">&times;</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-bronze" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title" tabindex="-1" hidden>
+      <div class="modal-content">
+        <h3 id="modal-bronze-title">Bronze Benefits</h3>
+        <ul>
+          <li>All Non-Profit benefits</li>
+          <li>Business directory listing</li>
+          <li>Quarterly newsletter</li>
+        </ul>
+        <button type="button" class="close-modal" aria-label="Close dialog">&times;</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-silver" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title" tabindex="-1" hidden>
+      <div class="modal-content">
+        <h3 id="modal-silver-title">Silver Benefits</h3>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Featured event sponsorship</li>
+          <li>Priority support</li>
+        </ul>
+        <button type="button" class="close-modal" aria-label="Close dialog">&times;</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-gold" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title" tabindex="-1" hidden>
+      <div class="modal-content">
+        <h3 id="modal-gold-title">Gold Benefits</h3>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>Premium advertising</li>
+          <li>Exclusive networking events</li>
+        </ul>
+        <button type="button" class="close-modal" aria-label="Close dialog">&times;</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h2>Salt Lake Chamber of Commerce</h2>
+      <p>
+      <br>10 Rue De La Paix<br>Salt Lake, Mali 999</p>
+      <a href="mailto:info@saltlakecc.org">
+        <i class="ri-mail-fill" aria-hidden="true"></i>
+        <span class="visually-hidden">Email: </span>info@saltlakecc.org
+      </a>
+      <a href="tel:+1234567890">
+        <i class="ri-phone-fill"></i>
+        +1 (234) 567-89
+      </a>
+    </div>
+    <div class="social">
+      <a href="#"><i class="ri-youtube-line"></i></a>
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-fill"></i></a>
+    </div>
+    <p class="date">
+      WDD231 Class Project 
+      <br> Shaniah Nyabawa
+      <br> &copy; <span id="currentyear"></span> Salt Lake Chamber of Commerce
+      <br>Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>

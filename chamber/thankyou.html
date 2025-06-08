@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You for Joining!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/join.css">
+  <style>
+    .thankyou-container {
+      max-width: 500px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      padding: 2rem;
+      text-align: center;
+    }
+    .thankyou-container h1 {
+      color: #1a4d8f;
+    }
+    .thankyou-details {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .thankyou-details dt {
+      font-weight: bold;
+      color: #1a4d8f;
+    }
+    .thankyou-details dd {
+      margin: 0 0 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="thankyou-container">
+      <h1>Thank You for Joining!</h1>
+      <p>We have received your membership application. Here’s what you submitted:</p>
+      <dl class="thankyou-details" id="submittedInfo"></dl>
+    </div>
+  </main>
+  <script>
+    // Parse query parameters and display them
+    function getParams() {
+      const params = {};
+      window.location.search.substring(1).split('&').forEach(pair => {
+        const [key, value] = pair.split('=');
+        if (key) params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+      });
+      return params;
+    }
+    const params = getParams();
+    const info = document.getElementById('submittedInfo');
+    const fields = [
+      { label: "First Name", key: "firstName" },
+      { label: "Last Name", key: "lastName" },
+      { label: "Email", key: "email" },
+      { label: "Mobile Phone", key: "phone" },
+      { label: "Business/Organization Name", key: "orgName" },
+      { label: "Timestamp", key: "timestamp" }
+    ];
+    fields.forEach(f => {
+      if (params[f.key]) {
+        info.innerHTML += `<dt>${f.label}</dt><dd>${params[f.key]}</dd>`;
+      }
+    });
+  </script>
+</body>
+</html>
