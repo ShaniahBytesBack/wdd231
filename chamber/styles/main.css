@@ -77,8 +77,7 @@ nav {
   color: #e63946;
 }
 
-.nav-links a.active,
-.navbar a.active {
+a.active {
   color: #fff !important;
   background: #c1121f !important;
   border-radius: 6px;
