@@ -1,0 +1,52 @@
+/* Base Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFDF9;
+  color: #2B2B2B;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: #B29762;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #EDEDED;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #EDEDED;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+}
