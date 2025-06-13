@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Temple Square",
+    "address": "50 N Temple, Salt Lake City, UT 84150",
+    "description": "A 10-acre historic site at the heart of Salt Lake City, featuring beautiful gardens, fountains, and the iconic Salt Lake Temple.",
+    "image": "images/templesquare.webp",
+    "link": "https://www.templesquare.com/"
+  },
+  {
+    "name": "Utah State Capitol",
+    "address": "350 State St, Salt Lake City, UT 84103",
+    "description": "Perched on Capitol Hill, this neoclassical building offers panoramic city views and free guided tours.",
+    "image": "images/utahstatecapitol.webp",
+    "link": "https://utahstatecapitol.utah.gov/"
+  },
+  {
+    "name": "Red Butte Garden",
+    "address": "300 Wakara Way, Salt Lake City, UT 84108",
+    "description": "A botanical garden and arboretum with themed gardens, hiking trails, and outdoor concerts in the summer.",
+    "image": "images/redbuttegarden.webp",
+    "link": "https://redbuttegarden.org/"
+  },
+  {
+    "name": "Natural History Museum of Utah",
+    "address": "301 Wakara Way, Salt Lake City, UT 84108",
+    "description": "Explore fascinating exhibits on Utah’s geology, paleontology, and native cultures in a stunning modern building.",
+    "image": "images/naturalhistory.webp",
+    "link": "https://nhmu.utah.edu/"
+  },
+  {
+    "name": "Hogle Zoo",
+    "address": "2600 Sunnyside Ave S, Salt Lake City, UT 84108",
+    "description": "Home to over 800 animals, Hogle Zoo is a family favorite with engaging exhibits and conservation programs.",
+    "image": "images/hoglezoo.webp",
+    "link": "https://www.hoglezoo.org/"
+  },
+  {
+    "name": "Liberty Park",
+    "address": "600 E 900 S, Salt Lake City, UT 84105",
+    "description": "A lively urban park with a lake, aviary, playgrounds, and plenty of space for picnics and recreation.",
+    "image": "images/libertypark.webp",
+    "link": "https://www.slc.gov/parks/parks-division/liberty-park/"
+  },
+  {
+    "name": "The Leonardo Museum",
+    "address": "209 E 500 S, Salt Lake City, UT 84111",
+    "description": "An innovative museum blending science, technology, and art with hands-on exhibits for all ages.",
+    "image": "images/theleonardo.webp",
+    "link": "https://theleonardo.org/"
+  },
+  {
+    "name": "Great Salt Lake",
+    "address": "13312 W 1075 S, Magna, UT 84044",
+    "description": "The largest saltwater lake in the Western Hemisphere, famous for its unique ecosystem and breathtaking sunsets.",
+    "image": "images/greatsaltlake.webp",
+    "link": "https://stateparks.utah.gov/parks/great-salt-lake/"
+  }
+]
