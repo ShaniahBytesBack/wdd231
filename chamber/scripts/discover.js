@@ -67,6 +67,7 @@ async function loadAttractions() {
     animateCardsOnScroll();
 
   } catch (e) {
+    console.error("Attraction loading error:", e);
     grid.innerHTML = "<p>Sorry, we couldn't load the attractions right now.</p>";
   }
 }
@@ -89,7 +90,6 @@ function addHoverEffect() {
 addHoverEffect();
 window.addEventListener('resize', addHoverEffect);
 
-// Back to Top Button (styles handled in CSS)
 const backToTopBtn = document.createElement('button');
 backToTopBtn.textContent = "↑ Top";
 backToTopBtn.id = "backToTop";
@@ -105,3 +105,19 @@ window.addEventListener('scroll', () => {
     backToTopBtn.classList.remove("show");
   }
 });
+
+function animateCardsOnScroll() {
+  const cards = document.querySelectorAll('.discover-card');
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('card-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  cards.forEach(card => observer.observe(card));
+}
