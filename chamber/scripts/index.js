@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
   displaySpotlights();
 });
 
-
 function animateCardsOnScroll() {
   const cards = document.querySelectorAll('.discover-card');
   const observer = new IntersectionObserver(
@@ -138,33 +137,15 @@ function animateCardsOnScroll() {
 const backToTopBtn = document.createElement('button');
 backToTopBtn.textContent = "↑ Top";
 backToTopBtn.id = "backToTop";
-backToTopBtn.style.position = "fixed";
-backToTopBtn.style.bottom = "32px";
-backToTopBtn.style.right = "32px";
-backToTopBtn.style.display = "none";
-backToTopBtn.style.background = "#1e90ff";
-backToTopBtn.style.color = "#fff";
-backToTopBtn.style.border = "none";
-backToTopBtn.style.borderRadius = "50%";
-backToTopBtn.style.width = "48px";
-backToTopBtn.style.height = "48px";
-backToTopBtn.style.fontSize = "1rem";
-backToTopBtn.style.boxShadow = "0 2px 8px #1e90ff33";
-backToTopBtn.style.cursor = "pointer";
-backToTopBtn.style.zIndex = "1000";
-backToTopBtn.style.transition = "opacity 0.3s";
+backToTopBtn.className = "back-to-top";
 
 backToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 document.body.appendChild(backToTopBtn);
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
-    backToTopBtn.style.display = "block";
-    backToTopBtn.style.opacity = "1";
+    backToTopBtn.classList.add("show");
   } else {
-    backToTopBtn.style.opacity = "0";
-    setTimeout(() => {
-      if (window.scrollY < 300) backToTopBtn.style.display = "none";
-    }, 300);
+    backToTopBtn.classList.remove("show");
   }
 });

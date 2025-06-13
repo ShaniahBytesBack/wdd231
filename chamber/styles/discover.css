@@ -155,3 +155,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+.card-hidden {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 0.6s cubic-bezier(.4,2,.6,1), transform 0.6s cubic-bezier(.4,2,.6,1);
+}
+.card-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: none;
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px #1e90ff33;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+}
